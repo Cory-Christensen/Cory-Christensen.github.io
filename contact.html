@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Cory Christensen - Contact</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <script src="./js/contact.js"></script>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+
+    <div class="row">
+      <div class="twelve columns">
+        <nav>
+          <ul>
+            <li><button><a href="index.html">Home</a></button></li>
+            <li><button><a href="about.html">About</a></button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns">
+        <button id="openModal">Additional Contact Information</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <h3>Contact Me</h3>
+    <form id="contactForm">
+      <div class="row">
+        <div class="six columns">
+          <label for="emailInput">Your email</label>
+          <input class="u-full-width" type="text" placeholder="test@mailbox.com" id="emailInput">
+        </div>
+        <div class="six columns">
+          <label for="contactSubject">Reason for contacting</label>
+          <select class="u-full-width" id="contactSubject">
+            <option value="Questions">Questions</option>
+            <option value="Admiration">Admiration</option>
+            <option value="Business">Business</option>
+          </select>
+        </div>
+      </div>
+      <label for="exampleMessage">Message</label>
+      <textarea class="u-full-width" placeholder="Hi Cory, " id="contactMessage"></textarea>
+      <label class="send-yourself-copy">
+        <input type="checkbox" id="contactcc">
+        <span class="label-body">Send a copy to yourself</span>
+      </label>
+      <input class="button-primary" type="submit" value="Submit">
+    </form>
+</div>
+
+<div id="contactModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">x</span>
+    <section class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <h3>Contact Me</h3>
+            <img class="profile" src="images/profile_2.jpg"></img>
+            <p>Email: christensen.corym(at)gmail.com</p>
+          </div>
+        </div><!--end of .row-->
+        <div class="row">
+          <div class="offset-by-two eight columns">
+            <ul>
+              <li><a href="http://twitter.com/ChristensenCory" title="">Twitter</a></li>
+              <li><a href="http://linkedin.com/in/corymchristensen" title="">Linkedin</a></li>
+              <li><a href="http://github.com/Cory-Christensen" title="">Github</a></li>
+            </ul>
+          </div>
+        </div><!--end of .row-->
+      </div><!--end of .container-->
+    </section>
+  </div>
+
+</div>
+
+</body>
+</html>
