@@ -338,3 +338,9 @@ nav li:nth-child(2n+1) a:after {
   height: 300px;
   width: auto
 }
+
+button#openModal:hover {
+  background-color: #1EAEDB;
+  color: white;
+  transition: all 0.5s;
+}
